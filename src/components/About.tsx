@@ -22,17 +22,17 @@ const features = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-gradient-to-br from-emerald-50 via-white to-teal-50 dark:from-dark-bg dark:via-gray-900 dark:to-dark-surface">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-24 bg-gradient-to-br  from-emerald-50 via-white to-teal-50 dark:from-dark-bg dark:via-gray-900 dark:to-dark-surface">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 overflow-y-hidden">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-20 overflow-y-hidden"
         >
           <motion.div
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-100 to-orange-100 dark:from-rose-900/30 dark:to-orange-900/30 rounded-full mb-6"
+            className="inline-flex items-center overflow-y-hidden px-6 py-3 bg-gradient-to-r from-rose-100 to-orange-100 dark:from-rose-900/30 dark:to-orange-900/30 rounded-full mb-6"
             whileHover={{ scale: 1.05 }}
           >
             <Palette className="w-5 h-5 text-rose-600 dark:text-rose-400 mr-2" />

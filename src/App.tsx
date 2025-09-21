@@ -14,9 +14,9 @@ function App() {
       <div className="min-h-screen bg-white dark:bg-dark-bg transition-colors duration-300">
         <Header />
         <main>
-          <Hero />
+           <Hero />
           <About />
-          <Skills />
+          <Skills /> 
           <Projects />
           <Contact />
         </main>

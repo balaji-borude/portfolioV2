@@ -54,8 +54,8 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 via-emerald-50 to-white dark:from-dark-surface dark:via-dark-bg dark:to-gray-900">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="w-screen py-24 overflow-x-hidden bg-gradient-to-br from-slate-50 via-emerald-50 to-white dark:from-dark-surface dark:via-dark-bg dark:to-gray-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function Contact() {
           className="text-center mb-20"
         >
           <motion.div
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/30 rounded-full mb-6"
+            className=" inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/30 rounded-full mb-6"
             whileHover={{ scale: 1.05 }}
           >
             <Send className="w-5 h-5 text-cyan-600 dark:text-cyan-400 mr-2" />
@@ -98,7 +98,12 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="space-y-6">
+
+
+            {/* Isuse occured in here  */}
+
+            <div className="space-y-6  h-auto relative ">
+              
               {contactInfo.map((item, index) => (
                 <motion.a
                   key={item.label}
@@ -110,22 +115,24 @@ export default function Contact() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.02, x: 10 }}
-                  className="group relative block"
+                  className="group relative block w-full"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-blue-400/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 -z-10" />
-                  <div className="flex items-center space-x-6 p-6 bg-white/80 dark:bg-dark-bg/80 backdrop-blur-sm rounded-2xl hover:shadow-2xl transition-all duration-500 border border-gray-200/50 dark:border-gray-700/50">
+                  <div className="flex items-center space-x-20 p-6 bg-white/80 dark:bg-dark-bg/80 backdrop-blur-sm rounded-2xl hover:shadow-2xl transition-all duration-500 border border-gray-200/50 dark:border-gray-700/50">
+
                     <motion.div
                       className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center text-white shadow-xl"
                       whileHover={{ rotate: 360 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <item.icon size={24} />
+                      <item.icon size={20} />
                     </motion.div>
-                    <div className="flex-1">
+
+                    <div className=" absolute flex flex-col flex-wrap   ">
                       <p className="text-sm text-gray-500 dark:text-gray-400 mb-1 font-medium">
                         {item.label}
                       </p>
-                      <p className="text-gray-900 dark:text-white font-semibold text-lg group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+                      <p className="text-gray-900 dark:text-white flex flex-wrap font-semibold text-sm   sm:text-lg group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                         {item.value}
                       </p>
                     </div>
@@ -133,6 +140,7 @@ export default function Contact() {
                 </motion.a>
               ))}
             </div>
+
           </motion.div>
 
           {/* Contact Form */}

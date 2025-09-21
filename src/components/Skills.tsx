@@ -41,11 +41,11 @@ export default function Skills() {
           className="text-center mb-20"
         >
           <motion.div
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30 rounded-full mb-6"
+            className="inline-flex items-center overflow-y-hidden px-6 py-3 bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30 rounded-full mb-6"
             whileHover={{ scale: 1.05 }}
           >
             <Code2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 mr-2" />
-            <span className="text-emerald-700 dark:text-emerald-300 font-medium">Technical Skills</span>
+            <span className="text-emerald-700  dark:text-emerald-300 font-medium">Technical Skills</span>
           </motion.div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-900 via-emerald-800 to-teal-900 dark:from-white dark:via-emerald-300 dark:to-teal-300 bg-clip-text text-transparent mb-6">
             What I Work With

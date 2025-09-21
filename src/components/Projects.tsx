@@ -43,7 +43,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-24 bg-gradient-to-br from-white via-emerald-50 to-slate-100 dark:from-dark-surface dark:via-dark-bg dark:to-gray-900"
+      className="py-24 bg-gradient-to-br from-white via-emerald-50 to-slate-100 dark:from-dark-surface dark:via-dark-bg dark:to-gray-900 overflow-x-hidden"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

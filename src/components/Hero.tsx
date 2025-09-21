@@ -77,20 +77,20 @@ export default function Hero() {
             </motion.div>
 
             <motion.h1
-              className="text-5xl sm:text-7xl lg:text-8xl font-bold text-gray-900 dark:text-white mb-8 leading-tight"
+              className="text-5xl sm:text-6xl lg:text-8xl  font-bold text-gray-900 dark:text-white mb-8 leading-tight"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               Hi, I'm{" "}
               <motion.span
-                className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 dark:from-emerald-400 dark:via-teal-400 dark:to-cyan-400"
+                className="relative inline-block p-2 text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 dark:from-emerald-400 dark:via-teal-400 dark:to-cyan-400"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300, damping: 10 }}
               >
                 Balaji
                 <motion.div
-                  className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 rounded-full"
+                  className="absolute -bottom-2 left-0  right-0 h-1  bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 rounded-full"
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 1, delay: 1 }}
