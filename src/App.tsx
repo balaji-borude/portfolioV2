@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <ThemeProvider>
-      <div className="font-poppins">
+      <div className="min-h-screen bg-white dark:bg-dark-bg transition-colors duration-300">
         <Header />
         <main>
           <Hero />
