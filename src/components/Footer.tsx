@@ -71,7 +71,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="border-t border-gray-800 pt-12"
           >
-            <motion.p 
+            <motion.div 
               className="text-gray-400 flex items-center justify-center space-x-2 text-lg"
               whileHover={{ scale: 1.02 }}
             >
@@ -98,7 +98,7 @@ export default function Footer() {
                 </motion.div>
               </motion.div>
               {/* <span>and React</span> */}
-            </motion.p>
+            </motion.div>
           </motion.div>
         </div>
       </div>

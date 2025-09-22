@@ -18,7 +18,7 @@ const skillCategories = [
   {
     title: 'Mobile Development',
     icon: Smartphone,
-    skills: ['React Native', 'Flutter', 'iOS', 'Android', 'Cross-platform'],
+    skills: ['React Native', 'iOS', 'Android', 'Cross-platform'],
     color: 'from-rose-400 to-pink-600',
   },
   {

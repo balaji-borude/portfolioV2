@@ -1,28 +1,34 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Code, Palette, Zap } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Code, Palette, Zap } from "lucide-react";
 
 const features = [
   {
     icon: Code,
-    title: 'Clean Code',
-    description: 'Writing maintainable, scalable code that follows best practices and industry standards.',
+    title: "Clean Code",
+    description:
+      "Writing maintainable, scalable code that follows best practices and industry standards.",
   },
   {
     icon: Palette,
-    title: 'Creative Design',
-    description: 'Crafting beautiful, intuitive interfaces that provide exceptional user experiences.',
+    title: "Creative Design",
+    description:
+      "Crafting beautiful, intuitive interfaces that provide exceptional user experiences.",
   },
   {
     icon: Zap,
-    title: 'Performance',
-    description: 'Building fast, optimized applications that deliver results and exceed expectations.',
+    title: "Performance",
+    description:
+      "Building fast, optimized applications that deliver results and exceed expectations.",
   },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-gradient-to-br  from-emerald-50 via-white to-teal-50 dark:from-dark-bg dark:via-gray-900 dark:to-dark-surface">
+    <section
+      id="about"
+      className="py-24 bg-gradient-to-br  from-emerald-50 via-white to-teal-50 dark:from-dark-bg dark:via-gray-900 dark:to-dark-surface"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 overflow-y-hidden">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -36,14 +42,17 @@ export default function About() {
             whileHover={{ scale: 1.05 }}
           >
             <Palette className="w-5 h-5 text-rose-600 dark:text-rose-400 mr-2" />
-            <span className="text-rose-700 dark:text-rose-300 font-medium">About Me</span>
+            <span className="text-rose-700 dark:text-rose-300 font-medium">
+              About Me
+            </span>
           </motion.div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-900 via-rose-800 to-orange-900 dark:from-white dark:via-rose-300 dark:to-orange-300 bg-clip-text text-transparent mb-6">
             Passionate Developer
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            I'm a passionate full-stack developer with 5+ years of experience creating 
-            digital solutions that bridge the gap between design and functionality.
+            I'm a passionate full-stack developer with 5+ years of experience
+            creating digital solutions that bridge the gap between design and
+            functionality.
           </p>
         </motion.div>
 
@@ -66,21 +75,35 @@ export default function About() {
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-transparent" />
                   <span className="relative z-10">B</span>
                 </motion.div>
-                <motion.h3 
+                <motion.h3
                   className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-4"
                   whileHover={{ scale: 1.02 }}
                 >
                   Balaji Borude
                 </motion.h3>
-                <motion.p 
-                  className="text-gray-600 dark:text-gray-300 text-center text-lg leading-relaxed"
+
+                
+                <motion.p
+                  className="text-gray-600 dark:text-gray-300 text-center text-lg leading-relaxed mb-6"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ delay: 0.3 }}
                 >
-                  Full Stack Developer based in Pune, India. I love turning complex 
-                  problems into simple, beautiful solutions.
+                  Full Stack Developer based in Pune, India. I love turning
+                  complex problems into simple, beautiful solutions.
                 </motion.p>
+
+                {/* Resume Button */}
+                <div className="text-center">
+                  <a
+                    href="/BalajiResume.pdf" // added portfolio on public folder
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-rose-500 to-orange-500 text-white font-medium shadow-lg hover:shadow-xl transition duration-300"
+                  >
+                    View My Resume
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -128,3 +151,4 @@ export default function About() {
     </section>
   );
 }
+// put your resume file in the public folder

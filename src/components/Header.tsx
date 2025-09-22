@@ -7,6 +7,7 @@ const navItems = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
+   { href: '#Experience', label: 'Experience' },
   { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -47,6 +48,22 @@ export default function Header() {
     setIsOpen(false);
   };
 
+//   const scrollToSection = (href: string) => {
+//   const element = document.getElementById(href.slice(1));
+//   if (element) {
+//     const headerOffset = 64; // height of your header in px
+//     const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+//     const offsetPosition = elementPosition - headerOffset;
+
+//     window.scrollTo({
+//       top: offsetPosition,
+//       behavior: "smooth",
+//     });
+//   }
+//   setIsOpen(false); // close mobile menu
+// };
+
+
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -55,12 +72,13 @@ export default function Header() {
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <motion.div
+          <motion.a
+           href="#home"
             whileHover={{ scale: 1.05 }}
             className="font-bold text-xl text-gray-900 dark:text-white"
           >
-            Portfolio
-          </motion.div>
+           Balaji's Portfolio
+          </motion.a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
