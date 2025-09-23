@@ -4,13 +4,13 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
-<url>
-  <loc>https://portfolio-beta-jet-10.vercel.app/</loc>
-  <lastmod>2025-09-22T05:32:27+00:00</lastmod>
-</url>
-
+  <!-- Portfolio root URL -->
+  <url>
+    <loc>https://portfolio-beta-jet-10.vercel.app/</loc>
+    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
 </urlset>
