@@ -68,6 +68,7 @@ const ExperienceCard: React.FC<{
 
   return (
     
+    <div className="overflow-x-hidden">
 
     <motion.div
       variants={cardVariant(index)}
@@ -169,6 +170,7 @@ const ExperienceCard: React.FC<{
         </motion.div>
       </VerticalTimelineElement>
     </motion.div>
+    </div>
 
   );
 };
@@ -178,7 +180,7 @@ const Experience: React.FC = () => {
   return (
     <section
       id="Experience"
-      className="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 overflow-hidden"
+      className="py-12 sm:py-16 lg:py-24 bg-gradient-to-br overflow-x-hidden from-slate-50 via-indigo-50 to-purple-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 overflow-hidden"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

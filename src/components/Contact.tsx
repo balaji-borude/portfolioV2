@@ -54,7 +54,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="w-screen py-24 overflow-x-hidden bg-gradient-to-br from-slate-50 via-emerald-50 to-white dark:from-dark-surface dark:via-dark-bg dark:to-gray-900">
+    <section id="contact" className="w-auto py-24  bg-gradient-to-br from-slate-50 via-emerald-50 to-white dark:from-dark-surface dark:via-dark-bg dark:to-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
