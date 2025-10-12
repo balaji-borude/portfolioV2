@@ -50,9 +50,7 @@ export default function About() {
             Passionate Developer
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            I'm a passionate full-stack developer with 5+ years of experience
-            creating digital solutions that bridge the gap between design and
-            functionality.
+            I'm a passionate full-stack developer eager to create digital solutions that bring design and functionality together. I love turning ideas into clean, user-friendly applications that make an impact.
           </p>
         </motion.div>
 
