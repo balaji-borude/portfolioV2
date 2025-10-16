@@ -24,7 +24,7 @@ const projects = [
     tags: ["Express.js", "Python(flaskApi)", "Reat", "Tailwind"],
     featured: false,
     github: "https://github.com/SohamS11/CollegeProject.git",
-    live: "#",
+    live: "https://college-project-smoky.vercel.app/",
   },
   {
     title: "Reels Pro Application",
