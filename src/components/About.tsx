@@ -94,7 +94,7 @@ export default function About() {
                 {/* Resume Button */}
                 <div className="text-center">
                   <a
-                    href="/BalajiResume.pdf" // added portfolio on public folder
+                    href="/BALAJI_BORUDE_RESUME.pdf"//  portfolio added in public folder
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-rose-500 to-orange-500 text-white font-medium shadow-lg hover:shadow-xl transition duration-300"

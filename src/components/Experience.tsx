@@ -16,6 +16,7 @@ interface ExperienceData {
   date: string;
   location?: string;
   points: string[];
+  URL:string
 }
 
 // Experience Data
@@ -23,6 +24,7 @@ const experiences: ExperienceData[] = [
   {
     title: "MERN Stack Intern",
     company_name: "Stridemax India Pvt. Ltd",
+    URL:"https://www.linkedin.com/company/stridemex/posts/?feedView=all",
     icon: Briefcase,
     iconBg: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
     date: "March 2025 - june 2025",
@@ -37,6 +39,7 @@ const experiences: ExperienceData[] = [
   {
     title: "React Native Developer",
     company_name: "KRB Finearch Pvt. Ltd.",
+    URL:"https://www.linkedin.com/company/krb-finarch-research-private-limited/",
     icon: Smartphone,
     iconBg: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
     date: "July 2023 - Jan 2024",
@@ -138,13 +141,14 @@ const ExperienceCard: React.FC<{
             >
               {experience.title}
             </motion.h3>
-            <motion.p
-              className="text-indigo-600 dark:text-indigo-400 text-sm sm:text-base lg:text-lg font-semibold flex items-center space-x-2"
+            <motion.a
+             href={experience.URL} target="_blank"
+              className="text-indigo-600 dark:text-indigo-400 text-sm sm:text-base lg:text-lg font-semibold flex items-center space-x-2 cursor-pointer"
               whileHover={{ scale: 1.02 }}
             >
               <span>@</span>
               <span>{experience.company_name}</span>
-            </motion.p>
+            </motion.a>
           </div>
 
           <div className="space-y-3 sm:space-y-4">

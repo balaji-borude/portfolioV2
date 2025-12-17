@@ -52,6 +52,7 @@ export default function Footer() {
             {socialLinks.map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}
+                target="_blank"
                 href={href}
                 className="group relative p-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl hover:from-emerald-600 hover:to-teal-600 transition-all duration-500 shadow-2xl"
                 whileHover={{ scale: 1.1, y: -5 }}

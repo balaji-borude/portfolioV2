@@ -19,7 +19,7 @@ const projects = [
   {
     title: "College Searching Application",
     description:
-      "Collaborative project management tool with real-time updates, file sharing, and team communication.",
+      "fA smart college discovery platform powered by React and Python Scrapy, integrating live data scraped from CollegeDunia APIs to deliver accurate, dynamic college listings backed by a MongoDB database.",
     image:college,
     tags: ["Express.js", "Python(flaskApi)", "Reat", "Tailwind"],
     featured: false,
@@ -27,16 +27,16 @@ const projects = [
     live: "https://college-project-smoky.vercel.app/",
   },
   {
-    title: "Reels Pro Application",
-    description:
-      "This application made by using Next.js and typescript , it having scrolling reels like functionality",
+    title: "ReelNova",
+    description:"ReelNova — a MERN-stack short-video platform integrated with ImageKit.io, designed for creators to upload, store, and showcase reels in a fast and optimized way.",
     image:
       "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tags: ["Next.js", "Postgres", "Typescript", "Prisma"],
+    tags: ["Next.js", "MongoDb", "Typescript","ImageKit.io"],
     featured: false,
     github: "https://github.com/balaji-borude/Reels_Pro.git",
     live: "#",
   },
+
 ];
 
 export default function Projects() {
