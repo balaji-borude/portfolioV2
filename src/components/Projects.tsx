@@ -34,7 +34,7 @@ const projects = [
     tags: ["Next.js", "MongoDb", "Typescript","ImageKit.io"],
     featured: false,
     github: "https://github.com/balaji-borude/Reels_Pro.git",
-    live: "#",
+    live: "https://reel-nova-six.vercel.app/",
   },
 
 ];
