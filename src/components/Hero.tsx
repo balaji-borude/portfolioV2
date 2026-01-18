@@ -154,7 +154,7 @@ export default function Hero() {
 
               {/* Secondary Button - View Resume */}
               <motion.a
-                href="https://drive.google.com/file/d/1q8fs0zAneqTYkF-RlnJB7088J4c02qg1/view?usp=drive_link"
+                href="https://drive.google.com/file/d/14hEJfM6yo0s8EtnVAFb8HNm5PMRyhaZk/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative px-10 py-4 bg-white/90 dark:bg-gray-800/90 

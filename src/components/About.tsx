@@ -94,7 +94,7 @@ export default function About() {
                 {/* Resume Button */}
                 <div className="text-center">
                   <a
-                    href="https://drive.google.com/file/d/1q8fs0zAneqTYkF-RlnJB7088J4c02qg1/view?usp=drive_link"//  portfolio added in public folder
+                    href="https://drive.google.com/file/d/14hEJfM6yo0s8EtnVAFb8HNm5PMRyhaZk/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-rose-500 to-orange-500 text-white font-medium shadow-lg hover:shadow-xl transition duration-300"
