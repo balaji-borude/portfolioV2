@@ -1,6 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
+import { RESUME_URL } from "../config";
 
 export default function Hero() {
   const scrollToAbout = () => {
@@ -154,9 +154,9 @@ export default function Hero() {
 
               {/* Secondary Button - View Resume */}
               <motion.a
-                href="https://drive.google.com/file/d/14hEJfM6yo0s8EtnVAFb8HNm5PMRyhaZk/view?usp=drive_link"
+                href={RESUME_URL}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="group relative px-10 py-4 bg-white/90 dark:bg-gray-800/90 
                text-gray-800 dark:text-gray-100 
                rounded-2xl font-semibold text-lg 

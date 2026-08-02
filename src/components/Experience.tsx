@@ -16,30 +16,44 @@ interface ExperienceData {
   date: string;
   location?: string;
   points: string[];
-  URL:string
+  URL?: string;
 }
 
 // Experience Data
 const experiences: ExperienceData[] = [
   {
+    title: "Software Developer",
+    company_name: "MSquare Software Systems Pvt. Ltd.",
+    icon: Briefcase,
+    iconBg: "linear-gradient(135deg, #10b981 0%, #0ea5e9 100%)",
+    date: "April 2026 - Present",
+    points: [
+      "Develop and maintain enterprise web applications using Angular, Node.js, Express.js, and MongoDB.",
+      "Implemented Maker–Checker workflows with role-based access control (RBAC), ensuring secure and auditable approvals.",
+      "Built and optimized REST APIs with pagination and search, improving performance and user experience for large datasets.",
+      "Designed and optimized MongoDB schemas to support scalable application performance and maintainability.",
+      "Deployed features on UAT environments and collaborated with QA teams for testing, bug triage, and release readiness.",
+    ],
+  },
+  {
     title: "MERN Stack Intern",
     company_name: "Stridemax India Pvt. Ltd",
-    URL:"https://www.linkedin.com/company/stridemex/posts/?feedView=all",
+    URL: "https://www.linkedin.com/company/stridemex/posts/?feedView=all",
     icon: Briefcase,
     iconBg: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-    date: "March 2025 - june 2025",
+    date: "March 2025 - June 2025",
     location: "Remote",
     points: [
       "Developed a full-featured Inventory Management System using the MERN stack.",
       "Built CRUD operations for products with JWT-based authentication.",
-      "Currently working on a real-time chat application using Socket.IO and MongoDB.",
+      "Worked on a real-time chat application using Socket.IO and MongoDB.",
       "Followed best practices for scalable code and clean UI/UX implementation.",
     ],
   },
   {
     title: "React Native Developer",
     company_name: "KRB Finearch Pvt. Ltd.",
-    URL:"https://www.linkedin.com/company/krb-finarch-research-private-limited/",
+    URL: "https://www.linkedin.com/company/krb-finarch-research-private-limited/",
     icon: Smartphone,
     iconBg: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
     date: "July 2023 - Jan 2024",
@@ -141,14 +155,23 @@ const ExperienceCard: React.FC<{
             >
               {experience.title}
             </motion.h3>
-            <motion.a
-             href={experience.URL} target="_blank"
-              className="text-indigo-600 dark:text-indigo-400 text-sm sm:text-base lg:text-lg font-semibold flex items-center space-x-2 cursor-pointer"
-              whileHover={{ scale: 1.02 }}
-            >
-              <span>@</span>
-              <span>{experience.company_name}</span>
-            </motion.a>
+            {experience.URL ? (
+              <motion.a
+                href={experience.URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 dark:text-indigo-400 text-sm sm:text-base lg:text-lg font-semibold flex items-center space-x-2 cursor-pointer"
+                whileHover={{ scale: 1.02 }}
+              >
+                <span>@</span>
+                <span>{experience.company_name}</span>
+              </motion.a>
+            ) : (
+              <div className="text-indigo-600 dark:text-indigo-400 text-sm sm:text-base lg:text-lg font-semibold flex items-center space-x-2">
+                <span>@</span>
+                <span>{experience.company_name}</span>
+              </div>
+            )}
           </div>
 
           <div className="space-y-3 sm:space-y-4">

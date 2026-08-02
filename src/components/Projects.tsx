@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import { ExternalLink, Github, Zap, Star } from "lucide-react";
 import StudyNotion from "../assets/StudyNotion.png";

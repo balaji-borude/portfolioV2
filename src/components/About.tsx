@@ -1,6 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Code, Palette, Zap } from "lucide-react";
+import { RESUME_URL } from "../config";
 
 const features = [
   {
@@ -94,7 +94,7 @@ export default function About() {
                 {/* Resume Button */}
                 <div className="text-center">
                   <a
-                    href="https://drive.google.com/file/d/14hEJfM6yo0s8EtnVAFb8HNm5PMRyhaZk/view?usp=drive_link"
+                    href={RESUME_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-rose-500 to-orange-500 text-white font-medium shadow-lg hover:shadow-xl transition duration-300"
